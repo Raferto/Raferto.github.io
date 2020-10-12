@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>test</title>
-        <link rel='stylesheet' type='text/css' href="Css/style.css"  />
+        <link rel='stylesheet' type='text/css' href="quiz1/Css/style.css"  />
     </head>
 
     <body>
