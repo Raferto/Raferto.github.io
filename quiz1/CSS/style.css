@@ -13,8 +13,8 @@ body {
 }
 
 .container:hover .sidenav a {
-  font-size: 3.5vh;
-  transition: 0.1s;
+  padding: 1vh 0 1vh 2vh;
+  transition: 0.5s;
 }
 
 .sidenav {
@@ -31,9 +31,8 @@ body {
 }
 
 .sidenav a {
-  padding: 1vh 0 1vh 2vh;
   text-decoration: none;
-  font-size: 0vh;
+  font-size: 3.5vh;
   color: #818181;
   display: block;
   transition: 1s;
