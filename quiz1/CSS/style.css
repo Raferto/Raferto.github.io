@@ -1,0 +1,45 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  position: fixed;
+  left: -1vh;
+  top: 40vh;
+}
+
+.container:hover .sidenav {
+  opacity: 1;
+  left: 0pt;
+}
+
+.sidenav {
+  height: 100%;
+  width: 30vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -30vh;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5vh;
+}
+
+.sidenav a {
+  padding: 1vh 0 1vh 2vh;
+  text-decoration: none;
+  font-size: 3.5vh;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a.active {
+  background-color: #727272;
+  color: black;
+}
+
