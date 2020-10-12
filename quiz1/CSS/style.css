@@ -12,10 +12,6 @@ body {
   left: 0pt;
 }
 
-.container:hover .sidenav a {
-  font-size: 3.5vh;
-}
-
 .sidenav {
   height: 100%;
   width: 30vh;
@@ -32,10 +28,9 @@ body {
 .sidenav a {
   padding: 1vh 0 1vh 2vh;
   text-decoration: none;
-  font-size: 1vh;
+  font-size: 3.5vh;
   color: #818181;
-  display: block;
-  transition: 0.5s;
+  display: table;
 }
 
 .sidenav a:hover {
@@ -45,5 +40,5 @@ body {
 .sidenav a.active {
   background-color: #727272;
   color: black;
+  display: block;
 }
-
