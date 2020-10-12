@@ -1,11 +1,28 @@
-body {
-  font-family: "Lato", sans-serif;
+:root {
+  --color-1:  #0378A6;
+  --color-2: #022859;
+  --color-3: #063573;
+  --color-4: #010D26;
+  --color-5: #F1F1F2;
+  --color-6: #91e7ff;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-6);
+}
+
+
+/* Sidebar */
 .container {
   position: fixed;
-  left: -1vh;
-  top: 40vh;
+  left: -0.1vh;
+  top: 6vh;
+  transition: 0.5s;
+}
+
+.container:hover {
+  left: 29vh;
 }
 
 .container:hover .sidenav {
@@ -19,26 +36,24 @@ body {
   z-index: 1;
   top: 0;
   left: -30vh;
-  background-color: #111;
+  background-color: var(--color-2);
   overflow-x: hidden;
   transition: 0.5s;
-  transition-delay: 2s;
-  padding-top: 5vh;
 }
 
 .sidenav a {
   padding: 1vh 0 1vh 2vh;
   text-decoration: none;
   font-size: 3.5vh;
-  color: #818181;
+  color: var(--color-1);
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--color-5);
 }
 
 .sidenav a.active {
-  background-color: #727272;
-  color: black;
+  background-color: var(--color-1);
+  color: var(--color-5);
 }
