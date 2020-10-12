@@ -9,7 +9,10 @@ body {
 }
 
 .container:hover .sidenav {
-  opacity: 1;
+  left: 0pt;
+}
+
+.container:hover .sidenav a {
   left: 0pt;
 }
 
@@ -30,8 +33,10 @@ body {
   padding: 1vh 0 1vh 2vh;
   text-decoration: none;
   font-size: 3.5vh;
+  left: -20pt;
   color: #818181;
   display: block;
+  transition: 0.5s;
 }
 
 .sidenav a:hover {
