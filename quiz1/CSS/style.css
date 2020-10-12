@@ -22,6 +22,7 @@ body {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
+  transition-delay: 0.1s;
   padding-top: 5vh;
 }
 
@@ -30,7 +31,7 @@ body {
   text-decoration: none;
   font-size: 3.5vh;
   color: #818181;
-  display: table;
+  display: block;
 }
 
 .sidenav a:hover {
@@ -40,5 +41,4 @@ body {
 .sidenav a.active {
   background-color: #727272;
   color: black;
-  display: block;
 }
