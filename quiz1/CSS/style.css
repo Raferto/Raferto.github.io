@@ -1,17 +1,16 @@
 :root {
-  --color-1:  #0378A6;
-  --color-2: #022859;
-  --color-3: #063573;
-  --color-4: #010D26;
-  --color-5: #F1F1F2;
-  --color-6: #91e7ff;
+  --bgcolor-1: #0378A6;
+  --bgcolor-2: #022859;
+  --bgcolor-3: #91e7ff;
+  --txtcolor-1: #010D26;
+  --txtcolor-2: #F1F1F2;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: var(--color-6);
+  background-color: var(--bgcolor-3);
+  margin: 0 0 0 0;
 }
-
 
 /* Sidebar */
 .container {
@@ -19,6 +18,7 @@ body {
   left: -0.1vh;
   top: 6vh;
   transition: 0.5s;
+  z-index: 100;
 }
 
 .container:hover {
@@ -33,10 +33,9 @@ body {
   height: 100%;
   width: 30vh;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: -30vh;
-  background-color: var(--color-2);
+  background-color: var(--bgcolor-2);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -45,15 +44,43 @@ body {
   padding: 1vh 0 1vh 2vh;
   text-decoration: none;
   font-size: 3.5vh;
-  color: var(--color-1);
+  color: var(--bgcolor-1);
   display: block;
 }
 
 .sidenav a:hover {
-  color: var(--color-5);
+  color: var(--txtcolor-2);
 }
 
 .sidenav a.active {
-  background-color: var(--color-1);
-  color: var(--color-5);
+  background-color: var(--bgcolor-1);
+  color: var(--txtcolor-2);
+}
+
+
+/* Header */
+#header {
+  background-color: var(--bgcolor-1);
+  color: var(--txtcolor-1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  transition: 0.2s;
+  z-index: 8;
+}
+
+.tab {
+  background-color: var(--bgcolor-3);
+  color: var(--txtcolor-1);
+  position: fixed;
+  top: 70px;
+  left: 200px;
+  font-size: 20px;
+  height: 25px;
+  width: 400px;
+  border-radius: 25px;
+  padding: 0 10px 0 10px;
+  transition: 0.2s;
+  z-index: 9;
 }
