@@ -75,22 +75,35 @@ body {
   color: var(--txtcolor-1);
   position: fixed;
   top: 75px;
-  padding-left: 350px;
+  padding-left: 28.5%;
   font-size: 20px;
-  height: 25px;
   width: 100%;
   transition: 0.2s;
   z-index: 9;
+  overflow: auto;
+}
+
+.tab a {
+  color: var(--txtcolor-1);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 2pt;
+}
+
+.tab a:hover {
+  background: linear-gradient(to top, var(--bgcolor-3) 0%, var(--bgcolor-3) 5%, var(--txtcolor-2) 15%,var(--txtcolor-2) 100%);
 }
 
 
 /* The Page */
 #article {
-  margin: 120px 1% 0 1%;
+  margin: 120px 3% 0 3%;
 }
 
 .leftBox {
   float: left;
+  display: ;
   width: 25%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -100,6 +113,7 @@ body {
   border-radius: 50px;
   margin: 0 0 25px 0;
   padding-top: 15px;
+  overflow: auto;
 }
 
 .leftBox h1,h2,h3 {
@@ -116,7 +130,27 @@ body {
 
 .rightBox {
   float: right;
+  display: inline-block;
   background-color: white;
   border: 1px solid var(--bgcolor-2);
-  width: 74%;
+  width: 71%;
+  overflow: auto;
+  margin-bottom: 1%;
+  padding: 0 0 2% 2%;
+}
+
+.rightBox h3 {
+  color: var(--bgcolor-1);
+  padding: 10pt 5pt 0pt 1pt;
+  display: inline-block;
+  border-bottom: solid var(--bgcolor-2);
+  margin-bottom: 10pt;
+}
+
+.rightBox table {
+  line-height: 25pt;
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--txtcolor-1);
+  padding-left: 20pt;
 }

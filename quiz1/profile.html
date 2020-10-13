@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <script>window.onscroll = function() {scrollFunction()} </script>
+        <script>window.onscroll = function() {scrollHeader(),scrollTab()} </script>
     
         <div class="container">
             <img src="CSS/img/arrow.png" style="width: 5vh;height: auto">
@@ -23,29 +23,95 @@
 
         <div id="header">
             <div id= "mytab" class="tab">
-                test
+                <a href="#AboutMe" onclick="ClickTab();"> About Me </a>
+                <a href="#Skill" onclick="ClickTab();"> Skill </a>
+                <a href="#Education" onclick="ClickTab();"> Education </a>
+                <a href="#Experience" onclick="ClickTab();"> Experience </a>
+                <a href="#Training" onclick="ClickTab();"> Training </a>
             </div>
         </div>
 
         <div id="article">
-            <div class="leftBox" style="height: 450px;">
-                <img src="CSS/img/mypic.png" style="width: 50%; margin-bottom:20px; border-radius: 50%;">
+            <div class="leftBox" style="height: 430px;">
+                <img src="CSS/img/mypic.png" style="width: 150px; margin-bottom: 20px; border-radius: 50%;">
                 <h1>Rafid Ferdianto</h1>
                 <h1 style="opacity: 0.5;"> Raferto </h1><br><br>
                 <h2>Department of Informatics <br> ITS</h2><br>
                 <h3>Surabaya, Indonesia</h3>
             </div>
 
-            <div class="rightBox" style="height: 500px;">
-                <p>test</p>
+            <div id="AboutMe" class="rightBox">
+                <h3>About Me</h3>
+                <table>
+                    <tr>
+                        <td style="width: 120pt;">Current Address</td>
+                        <td>: Pucang Adi street no. 6</td>
+                    </tr>
+                    <tr>
+                        <td>Original Address</td>
+                        <td>: Cempaka Raya street Wijaya Lestari Housing no. AF5</td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>: Banjarmasin</td>
+                    </tr>
+                    <tr>
+                        <td>Province</td>
+                        <td>: South Kalimantan</td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>: Indonesia</td>
+                    </tr>
+                </table><br>
+                <table>
+                    <tr>
+                        <td style="width: 120pt;">Birth Place</td>
+                        <td>: Bekasi, Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Date</td>
+                        <td>: 13, November 2000</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>: 19</td>
+                    </tr>
+                </table><br>
+                <table>
+                    <tr>
+                        <td style="width: 120pt;">Religion</td>
+                        <td>: Islam</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>: Play Games and Watch movie</td>
+                    </tr>
+                </table>
             </div>
 
+            <div id="Skill" class="rightBox" style="height: 200px;">
+                <h3>Skill</h3>
+            </div>
+            
             <div class="leftBox" style="height: 300px;">
                 <h1>Contact Me</h1> <br><br>
                 <h2 style="font-size: 17px;"> <img src="CSS/img/mail.png"> rafid.ferdianto@gmail.com </h2> <br>
                 <h2> <img src="CSS/img/phone.png"> 087815014902 </h2> <br>
                 <h2> <img src="CSS/img/line.png"> rafidferdianto </h2> <br>
                 <h2> <img src="CSS/img/dc.png"> Raferto#0269 </h2>
+            </div>
+
+            <div id="Education" class="rightBox" style="height: 200px;">
+                <h3>Education</h3>
+            </div>
+
+            <div id="Experience" class="rightBox" style="height: 200px;">
+                <h3>Experience</h3>
+            </div>
+
+            <div id="Training" class="rightBox" style="height: 200px;">
+                <h3>Training</h3>
             </div>
         </div>
 
@@ -54,7 +120,7 @@
 
 
         
-        <div style="padding:15px 15px 1000px;font-size:30px"></div>
+        <div style="padding:15px 15px 2000px;font-size:30px"></div>
     </body>
 
 </html>
