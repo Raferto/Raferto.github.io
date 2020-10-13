@@ -71,16 +71,35 @@ body {
 }
 
 .tab {
-  background-color: var(--bgcolor-3);
+  background-color: var(--txtcolor-2);
   color: var(--txtcolor-1);
   position: fixed;
-  top: 70px;
-  left: 200px;
+  top: 75px;
+  padding-left: 350px;
   font-size: 20px;
   height: 25px;
-  width: 400px;
-  border-radius: 25px;
-  padding: 0 10px 0 10px;
+  width: 100%;
   transition: 0.2s;
   z-index: 9;
+}
+
+/* The Page */
+#article {
+  margin: 120px 1% 0 1%;
+}
+
+.leftBox {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Segoe UI';
+  font-size: 13px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 0 25px 0;
+}
+
+.leftBox h1,h2,h3 {
+  margin: 0;
+  color: var(--txtcolor-1);
 }
