@@ -65,8 +65,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 200px;
-  max-height: 200px;
+  height: 150pt;
+  max-height: 150pt;
   border-bottom: 4px solid #022859;
   transition: 0.2s;
   z-index: 8;
@@ -90,7 +90,7 @@ body {
   background-color: var(--txtcolor-2);
   color: var(--txtcolor-1);
   position: fixed;
-  top: 175px;
+  top: 131pt;
   padding-left: 28.5%;
   font-size: 20px;
   width: 100%;
