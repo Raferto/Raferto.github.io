@@ -65,16 +65,32 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 200px;
+  max-height: 200px;
+  border-bottom: 4px solid #022859;
   transition: 0.2s;
   z-index: 8;
+  overflow: hidden;
+}
+
+#header h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px var(--bgcolor-2), 0 0 5px darkblue;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50pt;
+  font-size: 50pt;
+  width: 100%;
+  font-family: sans-serif;
+  color: var(--txtcolor-2);
+  position: absolute;
 }
 
 .tab {
   background-color: var(--txtcolor-2);
   color: var(--txtcolor-1);
   position: fixed;
-  top: 75px;
+  top: 175px;
   padding-left: 28.5%;
   font-size: 20px;
   width: 100%;
@@ -98,7 +114,7 @@ body {
 
 /* The Page */
 #article {
-  margin: 120px 3% 0 3%;
+  margin: 220px 3% 0 3%;
 }
 
 .leftBox {
