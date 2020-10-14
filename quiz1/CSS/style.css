@@ -129,7 +129,6 @@ body {
 
 .rightBox {
   float: right;
-  display: inline-block;
   background-color: white;
   border: 1px solid var(--bgcolor-2);
   width: 71%;
@@ -152,4 +151,24 @@ body {
   font-weight: bold;
   color: var(--txtcolor-1);
   padding-left: 20pt;
+}
+
+.rightBox h4 {
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--txtcolor-1);
+  padding-left: 20pt;
+  margin-top: 0pt;
+}
+
+.rightBox td .a{
+  margin: 0 auto;
+  height: 25px;
+  color: white;
+}
+
+.rightBox td .a img {
+  width: auto;
+  height: inherit;
+  margin-right: 5pt;
 }
