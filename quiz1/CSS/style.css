@@ -135,15 +135,17 @@ body {
   margin-bottom: 20px;
 }
 
-.leftBox h1,h2,h3 {
-  margin: 0;
+.leftBox h1, .leftBox h2, .leftBox h3 {
+  margin: 0 auto;
   color: var(--txtcolor-1);
 }
 
 .leftbox h2 img {
   display: inline;
   width: 30px;
+  margin: 0 auto;
   vertical-align: middle;
+  align-items: middle;
 }
 
 
