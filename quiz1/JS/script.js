@@ -1,5 +1,5 @@
 function scrollHeader() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("header").style.height = "35px";
   }
   else {
@@ -8,7 +8,7 @@ function scrollHeader() {
 }
 
 function scrollTab() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("mytab").style.top = "30px";
   }
   else {
