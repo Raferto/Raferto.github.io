@@ -115,6 +115,7 @@ body {
 /* The Page */
 #article {
   margin: 220px 3% 0 3%;
+  text-align: center;
 }
 
 .leftBox {
@@ -158,6 +159,7 @@ body {
   margin-bottom: 1%;
   padding: 0 2% 2% 2%;
   font-family: sans-serif;
+  text-align: left;
 }
 
 .rightBox h3 {
@@ -206,11 +208,15 @@ body {
 }
 
 .picBox {
+  display: inline-block;
   position: relative;
   width: 300px;
   height: 200px;
   overflow: hidden;
   background-color: black;
+  margin: 5pt 30pt 15pt 30pt;
+  text-align: left;
+  border: 1pt solid var(--bgcolor-2);
 }
 
 .picBox img {
@@ -239,12 +245,16 @@ body {
 
 .picBox .text {
   color: var(--txtcolor-2);
-  font-size: 20px;
+  font-size: 23px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  left: 10pt;
+  top: 10pt;
+  right: 10pt;
+  line-height: 15pt;
+}
+
+.picBox .text p {
+  font-size: 18px;
+  padding: 0;
+  position: absolute;
 }
