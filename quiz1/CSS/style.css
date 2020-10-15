@@ -204,3 +204,47 @@ body {
   height: inherit;
   margin-right: 5pt;
 }
+
+.picBox {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.picBox img {
+  display: block;
+  max-width: inherit;
+  max-width: inherit;
+}
+
+.picBox .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: var(--bgcolor-1);
+  overflow: hidden;
+  width: 0;
+  height: inherit;
+  transition: .5s ease;
+  opacity:0.7;
+}
+
+.picBox:hover .overlay {
+  width: 75%;
+  left: 25%;
+}
+
+.picBox .text {
+  color: var(--txtcolor-2);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
