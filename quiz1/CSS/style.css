@@ -13,7 +13,7 @@ body {
 }
 
 /* Sidebar */
-.container {
+.sidebar {
   position: fixed;
   left: -0.1vh;
   top: 6vh;
@@ -21,11 +21,11 @@ body {
   z-index: 100;
 }
 
-.container:hover {
+.sidebar:hover {
   left: 29vh;
 }
 
-.container:hover .sidenav {
+.sidebar:hover .sidenav {
   left: 0pt;
 }
 
@@ -207,7 +207,7 @@ body {
   margin-right: 5pt;
 }
 
-.picBox {
+.foodBox {
   display: inline-block;
   position: relative;
   width: 300px;
@@ -219,13 +219,11 @@ body {
   border: 1pt solid var(--bgcolor-2);
 }
 
-.picBox img {
+.foodBox img {
   display: block;
-  max-width: inherit;
-  max-width: inherit;
 }
 
-.picBox .overlay {
+.foodBox .overlay {
   position: absolute;
   bottom: 0;
   left: 100%;
@@ -238,12 +236,12 @@ body {
   opacity:0.7;
 }
 
-.picBox:hover .overlay {
+.foodBox:hover .overlay {
   width: 75%;
   left: 25%;
 }
 
-.picBox .text {
+.foodBox .text {
   color: var(--txtcolor-2);
   font-size: 23px;
   position: absolute;
@@ -253,8 +251,52 @@ body {
   line-height: 15pt;
 }
 
-.picBox .text p {
+.foodBox .text p {
   font-size: 18px;
   padding: 0;
   position: absolute;
+}
+
+.placeBox {
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin: 5pt 5pt 15pt 5pt;
+  text-align: left;
+  border: 1pt solid var(--bgcolor-2);
+  background-color: var(--txtcolor-2);
+}
+
+.placeBox img {
+  display: block;
+  padding-top: 40pt;
+  padding-left: 10pt;
+}
+
+.placeBox .text {
+  color: var(--txtcolor-1);
+  font-size: 23px;
+  position: absolute;
+  width: 96%;
+  text-align: center;
+  top: 10pt;  
+  right: 2%;
+  left: 2%;
+  line-height: 15pt;
+}
+
+.placeBox .text p {
+  text-align: justify;
+  font-size: 18px;
+  padding-left: 330px;
+}
+
+.placeBox a {
+  padding-left: 150px;
+  line-height: 0pt;
+  text-decoration: none;
+  color: var(--bgcolor-1);
+  display: inline;
 }
