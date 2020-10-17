@@ -1,6 +1,6 @@
 function scrollHeader() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("header").style.height = "30pt";
+    document.getElementById("header").style.height = "33pt";
   }
   else {
     document.getElementById("header").style.height = "150pt";
@@ -9,10 +9,10 @@ function scrollHeader() {
 
 function scrollTab() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("mytab").style.top = "20pt";
+    document.getElementById("mytab").style.top = "10pt";
   }
   else {
-    document.getElementById("mytab").style.top = "131pt";
+    document.getElementById("mytab").style.top = "125pt";
   }
 }
 
